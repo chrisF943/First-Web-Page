@@ -1,0 +1,139 @@
+body {
+  background-color: #545252;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #d6d4d4;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+h2 {
+  color: #d6d4d4;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 26px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  width: 24%;
+  height: 2px;
+  background-color: #007bff;
+  bottom: -8px;
+  left: 548px;
+}
+
+h3 {
+  color: #d6d4d4;
+  text-align: center;
+  margin-top: 200px;
+  font-size: 26px;
+  position: relative;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  width: 26.5%;
+  height: 2px;
+  background-color: #007bff;
+  bottom: -8px;
+  left: 530px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.bigger {
+  font-size: 1.4em;
+  color: #007bff;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.bigger:hover {
+  color: #00ffff;
+}
+
+.vl {
+  border-left: 2px solid #007bff;
+  height: 25px;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  top: 115px;
+}
+
+/* Added class for icons */
+.icon {
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 85px;
+}
+
+#java-icon, #python-icon, #mysql-icon, #javascript-icon, #html-icon, #css-icon {
+  /* Use the previously defined class and IDs for individual icons */
+  display: block; /* Added to ensure icons appear on separate lines */
+  margin-bottom: 15px; /* Added spacing between icons */
+}
+
+#java-icon {
+  left: 560px;
+  bottom: 335px;
+}
+
+#python-icon {
+  left: 670px;
+  bottom: 335px;
+}
+
+#mysql-icon {
+  left: 780px;
+  bottom: 335px;
+}
+
+#javascript-icon {
+  left: 560px;
+  bottom: 100px;
+}
+
+#html-icon {
+  left: 670px;
+  bottom: 100px;
+}
+
+#css-icon {
+  left: 780px;
+  bottom: 100px;
+}
+
+#bottom-gif {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 85px;
+}
